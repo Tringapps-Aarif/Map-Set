@@ -19,11 +19,12 @@ public class treeSet {
         rollNo.add(29);
         rollNo.add(12);
         System.out.println("The students those who did not cancell the registered exam : " + rollNo);
-        // Acending order
-        System.out.print("In correct order(Ascending) of registered student");
-        Iterator<String> ascSorting = rollNo.iterator();
-        while (ascSorting.hasNext()) {
-            System.out.println(ascSorting.next());
+        // Desending order because treemap return in acsending order
+         System.out.println("In Descending order : ");
+        Iterator<Integer> no = rollNo.descendingIterator();
+        while (no.hasNext()){
+            System.out.println(no.next()+" ");
+        }
         }
     }
 }
